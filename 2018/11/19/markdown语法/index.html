@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="#markdown语法 ##1、标题  （最多6个#有效）   ##2、文字效果倾斜、加粗  、倾斜加粗删除效果   ##3、引用    单行引用    单行引用12#代码引用(三个```之间)num=100   ##4、分割线三个减号（-）或者三个星号（*）   ##5、图片   ##6、超链接百度   ##7、列表    安装软件 认识    1.安装  2.认识 ##8、表格      姓名">
+<meta name="keywords" content="Python,PEP8">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PEP8代码风格指南">
+<meta property="og:url" content="http://yoursite.com/2018/11/19/markdown语法/index.html">
+<meta property="og:site_name" content="xdk">
+<meta property="og:description" content="#markdown语法 ##1、标题  （最多6个#有效）   ##2、文字效果倾斜、加粗  、倾斜加粗删除效果   ##3、引用    单行引用    单行引用12#代码引用(三个```之间)num=100   ##4、分割线三个减号（-）或者三个星号（*）   ##5、图片   ##6、超链接百度   ##7、列表    安装软件 认识    1.安装  2.认识 ##8、表格      姓名">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2018/11/19/markdown语法/图片路径）%0A![桌面图片](C:/Users/Administrator/Pictures/屏保桌面/屏保2.png">
+<meta property="og:updated_time" content="2019-04-13T08:26:10.314Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="PEP8代码风格指南">
+<meta name="twitter:description" content="#markdown语法 ##1、标题  （最多6个#有效）   ##2、文字效果倾斜、加粗  、倾斜加粗删除效果   ##3、引用    单行引用    单行引用12#代码引用(三个```之间)num=100   ##4、分割线三个减号（-）或者三个星号（*）   ##5、图片   ##6、超链接百度   ##7、列表    安装软件 认识    1.安装  2.认识 ##8、表格      姓名">
+<meta name="twitter:image" content="http://yoursite.com/2018/11/19/markdown语法/图片路径）%0A![桌面图片](C:/Users/Administrator/Pictures/屏保桌面/屏保2.png">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/favicon.ico">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>PEP8代码风格指南</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+    <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
+    <!-- jquery -->
+    <script src="/lib/jquery/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="banner">
+<div id="blogtitel" class="blogtitel">xdk</div>
+<ul id="wrapper" class="wrapper">
+  <div class="sun">
+    <div class="star"></div>
+  </div>
+  <div class="mercury">
+    <div class="planet">
+      <div class="shadow"></div>
+    </div>
+  </div>
+  <div class="venus">
+    <div class="planet">
+      <div class="shadow"></div>
+    </div>
+  </div>
+  <div class="earth">
+    <div class="planet"><div class="shadow"></div></div>
+  </div>
+  <div class="mars">
+    <div class="planet"><div class="shadow"></div></div>
+  </div>
+  <div class="jupiter">
+    <div class="planet"><div class="shadow"></div></div>
+  </div>
+</ul>
+</div>
+
+    <div class="background">
+      
+        <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/home/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/tzvetkov75">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2019/04/13/04-operator/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover="$("#i-prev").toggle();" onmouseout="$("#i-prev").toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover="$("#i-top").toggle();" onmouseout="$("#i-top").toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover="$("#i-share").toggle();" onmouseout="$("#i-share").toggle();" onclick="$("#share").toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2018/11/19/markdown语法/"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2018/11/19/markdown语法/&text=PEP8代码风格指南"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2018/11/19/markdown语法/&title=PEP8代码风格指南"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2018/11/19/markdown语法/&is_video=false&description=PEP8代码风格指南"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=PEP8代码风格指南&body=Check out this article: http://yoursite.com/2018/11/19/markdown语法/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2018/11/19/markdown语法/&title=PEP8代码风格指南"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2018/11/19/markdown语法/&title=PEP8代码风格指南"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2018/11/19/markdown语法/&title=PEP8代码风格指南"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2018/11/19/markdown语法/&title=PEP8代码风格指南"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2018/11/19/markdown语法/&name=PEP8代码风格指南&description="><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      
+    </div>
+  </span>
+</div>
+
+      
+      <div class="content index width mx-auto px2 my4">
+          
+          <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        PEP8代码风格指南
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">xdk</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2018-11-19T15:58:18.000Z" itemprop="datePublished">2018-11-19</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/PEP8/">PEP8</a>, <a class="tag-link" href="/tags/Python/">Python</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <p>#markdown语法</p>
+<p>##1、标题  （最多6个#有效）  </p>
+<p>##2、文字效果<br><em>倾斜</em>、<strong>加粗</strong>  、<strong><em>倾斜加粗</em></strong><br><del>删除效果</del>  </p>
+<p>##3、引用  </p>
+<blockquote>
+<p>单行引用  </p>
+<blockquote>
+<p>单行引用<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#代码引用(三个```之间)</span></span><br><span class="line">num=<span class="number">100</span></span><br></pre></td></tr></table></figure></p>
+</blockquote>
+</blockquote>
+<p>##4、分割线<br>三个减号（-）或者三个星号（*）</p>
+<hr>
+<hr>
+<p>##5、图片<br><img src="图片路径）
+![桌面图片](C:\Users\Administrator\Pictures\屏保桌面\屏保2.png" alt="图片名">  </p>
+<p>##6、超链接<br><a href="https://www.baidu.com" target="_blank" rel="noopener">百度</a>  </p>
+<p>##7、列表  </p>
+<ul>
+<li>安装软件</li>
+<li>认识</li>
+</ul>
+<p>  1.安装<br>  2.认识</p>
+<p>##8、表格  </p>
+<table>
+<thead>
+<tr>
+<th>姓名</th>
+<th>成绩</th>
+<th>评语</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>张三</td>
+<td>90</td>
+<td>好</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://www.jianshu.com/u/ae8f72416a17" target="_blank" rel="noopener">徐代科</a></p>
+
+  </div>
+</article>
+
+
+
+      </div>
+      
+       <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/home/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/tzvetkov75">Projects</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://yoursite.com/2018/11/19/markdown语法/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://yoursite.com/2018/11/19/markdown语法/&text=PEP8代码风格指南"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://yoursite.com/2018/11/19/markdown语法/&title=PEP8代码风格指南"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://yoursite.com/2018/11/19/markdown语法/&is_video=false&description=PEP8代码风格指南"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=PEP8代码风格指南&body=Check out this article: http://yoursite.com/2018/11/19/markdown语法/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://yoursite.com/2018/11/19/markdown语法/&title=PEP8代码风格指南"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://yoursite.com/2018/11/19/markdown语法/&title=PEP8代码风格指南"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://yoursite.com/2018/11/19/markdown语法/&title=PEP8代码风格指南"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://yoursite.com/2018/11/19/markdown语法/&title=PEP8代码风格指南"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://yoursite.com/2018/11/19/markdown语法/&name=PEP8代码风格指南&description="><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick="$("#toc-footer").toggle();return false;"><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick="$("#share-footer").toggle();return false;"><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick="$("#nav-footer").toggle();return false;"><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+      
+      <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy; 2019 �����
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/home/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/tzvetkov75">Projects</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+      <script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+<script src="/js/main.js"></script>
+<!-- Google Analytics -->
+
+<!-- Disqus Comments -->
+
+
+    </div>
+</body>
+</html>
